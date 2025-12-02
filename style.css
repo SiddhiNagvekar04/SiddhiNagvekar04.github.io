@@ -1,0 +1,76 @@
+:root{
+  --bg:#040617;
+  --panel:#061320;
+  --accent:#2bb7ff;
+  --muted:#bfcfe1;
+  --soft:#c8afe8;
+}
+
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(180deg,var(--bg),#021026);
+  color:var(--muted);
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:0 20px;
+}
+
+.nav{
+  position:fixed;
+  top:0; left:0; right:0;
+  padding:12px 0;
+  background:rgba(2,12,20,0.5);
+  backdrop-filter:blur(6px);
+}
+
+.nav .brand{
+  color:var(--soft);
+  font-weight:700;
+}
+
+.links a{
+  margin-left:18px;
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.hero{
+  padding-top:80px;
+}
+
+.section{
+  padding:40px 0;
+}
+
+.section-title{
+  color:var(--accent);
+  font-weight:700;
+}
+
+.grid{
+  display:grid;
+  gap:16px;
+}
+
+.card{
+  background:rgba(255,255,255,0.03);
+  padding:16px;
+  border-radius:12px;
+}
+
+.skill{
+  background:rgba(43,183,255,0.1);
+  padding:8px 12px;
+  margin-right:6px;
+  border-radius:8px;
+}
+
+.footer{
+  text-align:center;
+  padding:20px 0;
+  margin-top:40px;
+}
