@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 
 <meta charset="utf-8">
@@ -17,6 +18,8 @@ font-family:Poppins,sans-serif;
 background:linear-gradient(180deg,#060b1a,#020617);
 color:#e2e8f0;
 }
+
+/* particle background */
 
 canvas{
 position:fixed;
@@ -88,7 +91,7 @@ color:transparent;
 color:#94a3b8;
 }
 
-/* button */
+/* buttons */
 
 .btn{
 display:inline-block;
@@ -128,7 +131,7 @@ grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:22px;
 }
 
-/* projects */
+/* project cards */
 
 .project{
 background:#0f172a;
@@ -152,9 +155,24 @@ color:#94a3b8;
 
 /* certificates */
 
+.cert{
+background:#0f172a;
+border-radius:12px;
+border:1px solid #1e293b;
+padding:18px;
+text-align:center;
+}
+
 .cert img{
 width:100%;
-border-radius:10px;
+border-radius:8px;
+margin-bottom:12px;
+transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.cert img:hover{
+transform:scale(1.05);
+box-shadow:0 10px 30px rgba(59,130,246,.4);
 }
 
 /* education */
@@ -186,6 +204,7 @@ margin-top:60px;
 <canvas id="particles"></canvas>
 
 <nav>
+
 <div class="container">
 
 <strong>Siddhi</strong>
@@ -200,6 +219,7 @@ margin-top:60px;
 </div>
 
 </div>
+
 </nav>
 
 <!-- HERO -->
@@ -238,11 +258,12 @@ LinkedIn
 
 <div class="card">
 
-Motivated Computer Engineering student with strong interest in cybersecurity and SOC operations. 
-Experienced in log analysis, phishing detection and networking fundamentals while actively building practical security awareness through projects.
+Motivated Computer Engineering student with strong interest in cybersecurity and SOC operations.
+
+Experienced in phishing detection, authentication log analysis and networking fundamentals.
 
 <p>
-My goal is to develop analytical and investigative skills required in Security Operations Centers (SOC) and contribute to identifying cyber threats.
+My goal is to develop strong analytical and investigative skills required in Security Operations Centers.
 </p>
 
 </div>
@@ -347,9 +368,7 @@ My goal is to develop analytical and investigative skills required in Security O
 
 <p><strong>Approach:</strong> Analyzed authentication logs for anomalies.</p>
 
-<p><strong>Tools:</strong> Log analysis</p>
-
-<p><strong>Outcome:</strong> Identified brute force patterns and suspicious logins.</p>
+<p><strong>Outcome:</strong> Identified brute force patterns.</p>
 
 </div>
 
@@ -357,13 +376,11 @@ My goal is to develop analytical and investigative skills required in Security O
 
 <h3>Huffman Compression Tool</h3>
 
-<p><strong>Problem:</strong> Efficient file compression.</p>
+<p><strong>Problem:</strong> Efficient data compression.</p>
 
-<p><strong>Approach:</strong> Tested API based compression system.</p>
+<p><strong>Approach:</strong> Tested API-based compression workflow.</p>
 
-<p><strong>Tools:</strong> API Testing</p>
-
-<p><strong>Outcome:</strong> Achieved compression efficiency improvements.</p>
+<p><strong>Outcome:</strong> Verified compression efficiency improvements.</p>
 
 </div>
 
@@ -403,22 +420,52 @@ Communication • Problem Solving • Adaptability • Leadership • Analytical
 
 <div class="grid">
 
-<div class="project cert">
+<div class="cert">
+<a href="nptel-ethical-hacking.jpg" target="_blank">
 <img src="nptel-ethical-hacking.jpg">
+</a>
 <h3>Ethical Hacking</h3>
 <p>NPTEL Elite + Silver</p>
 </div>
 
-<div class="project cert">
+<div class="cert">
+<a href="nptel-data-science.jpg" target="_blank">
 <img src="nptel-data-science.jpg">
+</a>
 <h3>Data Science for Python</h3>
 <p>NPTEL Elite</p>
 </div>
 
-<div class="project cert">
+<div class="cert">
+<a href="iit-ethical-hacking-workshop.jpg" target="_blank">
+<img src="iit-ethical-hacking-workshop.jpg">
+</a>
+<h3>Ethical Hacking Workshop</h3>
+<p>IIT Techfest + Craw Cybersecurity</p>
+</div>
+
+<div class="cert">
+<a href="tcs-career-edge.jpg" target="_blank">
 <img src="tcs-career-edge.jpg">
+</a>
 <h3>Career Edge</h3>
 <p>TCS iON</p>
+</div>
+
+<div class="cert">
+<a href="infosys-listening.jpg" target="_blank">
+<img src="infosys-listening.jpg">
+</a>
+<h3>Active Listening Skills</h3>
+<p>Infosys Springboard</p>
+</div>
+
+<div class="cert">
+<a href="mahindra-employability.jpg" target="_blank">
+<img src="mahindra-employability.jpg">
+</a>
+<h3>Employability Skills Training</h3>
+<p>Mahindra Pride Classroom • Naandi Foundation</p>
 </div>
 
 </div>
