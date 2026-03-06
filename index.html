@@ -1,45 +1,519 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Siddhi Nagvekar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin:0; font-family:'Poppins', sans-serif;
-      background:#040617; color:#c9d4e4;
-      display:flex; align-items:center; justify-content:center;
-      height:100vh; text-align:center;
-    }
-    .wrap { max-width:600px; padding:20px; }
-    .links a {
-      display:block; margin:10px 0; padding:10px;
-      color:#040617; background:#7cc7ff;
-      font-weight:600; border-radius:8px;
-      text-decoration:none;
-    }
-    .links a:hover { background:#a3dcff; }
-  </style>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Siddhi Nagvekar | Cybersecurity Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:linear-gradient(180deg,#060b1a,#020617);
+color:#e2e8f0;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+/* container */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
+
+/* navbar */
+
+nav{
+position:sticky;
+top:0;
+background:#020617;
+padding:16px 0;
+border-bottom:1px solid #1e293b;
+}
+
+nav .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav a{
+margin-left:18px;
+color:#94a3b8;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#3b82f6;
+}
+
+/* hero */
+
+.hero{
+padding:100px 0 70px;
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.profile{
+width:170px;
+border-radius:50%;
+border:4px solid #3b82f6;
+box-shadow:0 0 25px rgba(59,130,246,0.5);
+}
+
+.hero h1{
+margin:0;
+font-size:2.7rem;
+background:linear-gradient(90deg,#3b82f6,#a78bfa);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+color:#94a3b8;
+}
+
+/* button */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:10px 22px;
+background:linear-gradient(90deg,#3b82f6,#a78bfa);
+color:white;
+border-radius:8px;
+text-decoration:none;
+}
+
+/* sections */
+
+.section{
+padding:70px 0;
+}
+
+.section h2{
+color:#3b82f6;
+margin-bottom:30px;
+}
+
+/* cards */
+
+.card{
+background:#0f172a;
+padding:22px;
+border-radius:12px;
+border:1px solid #1e293b;
+}
+
+/* grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:22px;
+}
+
+/* projects */
+
+.project{
+background:#0f172a;
+padding:22px;
+border-radius:12px;
+border:1px solid #1e293b;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 30px rgba(59,130,246,.4);
+}
+
+/* skills */
+
+.skills p{
+line-height:1.8;
+color:#94a3b8;
+}
+
+/* certificates */
+
+.cert img{
+width:100%;
+border-radius:10px;
+}
+
+/* education */
+
+.timeline{
+border-left:2px solid #3b82f6;
+padding-left:20px;
+}
+
+.timeline-item{
+margin-bottom:20px;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:40px 0;
+color:#94a3b8;
+border-top:1px solid #1e293b;
+margin-top:60px;
+}
+
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <h1 style="background: linear-gradient(90deg,#7cc7ff,#c8afe8); -webkit-background-clip: text; color: transparent; font-size:2.4rem; margin:0;">
-      Siddhi Nagvekar
-    </h1>
 
-    <p>Securing the Digital World, Softly • learning, building, securing</p>
+<canvas id="particles"></canvas>
 
-    <div class="links">
-      <a href="portfolio.html">Enter Portfolio</a>
-      <a href="https://github.com/SiddhiNagvekar04" target="_blank">GitHub</a>
-      <a href="mailto:your-email@example.com">Email</a>
-    </div>
+<nav>
+<div class="container">
 
-    <!-- Soft Cyber Graphic -->
-    <div style="margin-top:30px; opacity:0.6;">
-      <img src="soft-cyber-graphic.png" alt="cyber graphic" style="width:160px;">
-    </div>
-  </div>
+<strong>Siddhi</strong>
+
+<div>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#certificates">Certificates</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero container">
+
+<img class="profile" src="profile.jpg">
+
+<div>
+
+<h1>Siddhi Nagvekar</h1>
+
+<p style="font-size:18px;font-weight:500;">
+Learning Today, Building Tomorrow
+</p>
+
+<p>
+Cybersecurity • Networking • Security Analysis
+</p>
+
+<a class="btn" href="resume.pdf" download>Resume</a>
+
+<a class="btn" href="https://www.linkedin.com/in/siddhi-nagvekar-a02715350/" target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" class="section container">
+
+<h2>👩‍💻 About</h2>
+
+<div class="card">
+
+Motivated Computer Engineering student with strong interest in cybersecurity and SOC operations. 
+Experienced in log analysis, phishing detection and networking fundamentals while actively building practical security awareness through projects.
+
+<p>
+My goal is to develop analytical and investigative skills required in Security Operations Centers (SOC) and contribute to identifying cyber threats.
+</p>
+
+</div>
+
+</section>
+
+<!-- HIGHLIGHTS -->
+
+<section class="section container">
+
+<h2>⭐ Portfolio Highlights</h2>
+
+<div class="grid">
+
+<div class="project">
+<h3>9.87 CGPA</h3>
+<p>Academic excellence in Computer Engineering.</p>
+</div>
+
+<div class="project">
+<h3>NPTEL Ethical Hacking</h3>
+<p>Elite + Silver Certification.</p>
+</div>
+
+<div class="project">
+<h3>Cybersecurity Projects</h3>
+<p>Phishing detection and authentication log analysis.</p>
+</div>
+
+<div class="project">
+<h3>MGFF Scholarship</h3>
+<p>Recognized for academic excellence.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section class="section container">
+
+<h2>🛡 Cybersecurity Dashboard</h2>
+
+<div class="grid">
+
+<div class="project">
+<h3>3+</h3>
+<p>Cybersecurity Projects</p>
+</div>
+
+<div class="project">
+<h3>6</h3>
+<p>Certifications</p>
+</div>
+
+<div class="project">
+<h3>9.87</h3>
+<p>Current CGPA</p>
+</div>
+
+<div class="project">
+<h3>2023</h3>
+<p>Started Cybersecurity Journey</p>
+</div>
+
+</div>
+
+</section>
+
+<div style="text-align:center;margin:60px 0;">
+<img src="soft-cyber-graphic.png" width="180">
+</div>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section container">
+
+<h2>💻 Projects</h2>
+
+<div class="grid">
+
+<div class="project">
+
+<h3>Phishing Detection Web Application</h3>
+
+<p><strong>Problem:</strong> Phishing emails are a major cyber threat.</p>
+
+<p><strong>Approach:</strong> Built rule-based detection analyzing email content and URLs.</p>
+
+<p><strong>Tools:</strong> Python, Flask</p>
+
+<p><strong>Outcome:</strong> Classified emails as Safe, Suspicious or Phishing.</p>
+
+</div>
+
+<div class="project">
+
+<h3>Authentication Log Analysis</h3>
+
+<p><strong>Problem:</strong> Detect suspicious login activity.</p>
+
+<p><strong>Approach:</strong> Analyzed authentication logs for anomalies.</p>
+
+<p><strong>Tools:</strong> Log analysis</p>
+
+<p><strong>Outcome:</strong> Identified brute force patterns and suspicious logins.</p>
+
+</div>
+
+<div class="project">
+
+<h3>Huffman Compression Tool</h3>
+
+<p><strong>Problem:</strong> Efficient file compression.</p>
+
+<p><strong>Approach:</strong> Tested API based compression system.</p>
+
+<p><strong>Tools:</strong> API Testing</p>
+
+<p><strong>Outcome:</strong> Achieved compression efficiency improvements.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section container">
+
+<h2>⚙ Skills</h2>
+
+<div class="skills">
+
+<h3>Technical</h3>
+
+<p>
+Log Analysis • SIEM Concepts • TCP/IP • DNS • Nmap • Wireshark • Burp Suite • Python • SQL • Linux
+</p>
+
+<h3>Professional</h3>
+
+<p>
+Communication • Problem Solving • Adaptability • Leadership • Analytical Thinking
+</p>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATES -->
+
+<section id="certificates" class="section container">
+
+<h2>📜 Certificates</h2>
+
+<div class="grid">
+
+<div class="project cert">
+<img src="nptel-ethical-hacking.jpg">
+<h3>Ethical Hacking</h3>
+<p>NPTEL Elite + Silver</p>
+</div>
+
+<div class="project cert">
+<img src="nptel-data-science.jpg">
+<h3>Data Science for Python</h3>
+<p>NPTEL Elite</p>
+</div>
+
+<div class="project cert">
+<img src="tcs-career-edge.jpg">
+<h3>Career Edge</h3>
+<p>TCS iON</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education" class="section container">
+
+<h2>🎓 Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h4>Computer Engineering</h4>
+
+<p>Rizvi College of Engineering</p>
+
+<p>Mumbai University</p>
+
+<p>CGPA: 9.87</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section container">
+
+<h2>📬 Contact</h2>
+
+<div class="card">
+
+<p>If you'd like to connect regarding cybersecurity opportunities:</p>
+
+<a class="btn" href="mailto:siddhinagvekar04@gmail.com">
+Send Email
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Siddhi Nagvekar
+
+</footer>
+
+<script>
+
+const canvas=document.getElementById("particles");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<60;i++){
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2,
+d:Math.random()*1
+});
+}
+
+function draw(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+ctx.fillStyle="rgba(59,130,246,.6)";
+
+particles.forEach(p=>{
+ctx.beginPath();
+ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+ctx.fill();
+
+p.y+=p.d;
+
+if(p.y>canvas.height)p.y=0;
+});
+
+requestAnimationFrame(draw);
+}
+
+draw();
+
+</script>
+
 </body>
 </html>
